@@ -1,6 +1,6 @@
 {
   "name": "math-chem",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Add support for mathematical and chemical formulas for you Strapi project!",
   "strapi": {
     "name": "math-chem",
