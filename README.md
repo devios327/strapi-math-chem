@@ -36,6 +36,7 @@ In order to display some content from an external source on your admin side you 
 ```
 
 ```js
+const externalURI = "www.wiris.net"
 module.exports = ({ env }) => [
   'strapi::errors',
   {
@@ -43,12 +44,12 @@ module.exports = ({ env }) => [
     config: {
       contentSecurityPolicy: {
         directives: {
-          'script-src': ["'self'", "'unsafe-inline'", "'unsafe-eval'",  'www.wiris.net'],
-          'script-src-attr': ["'self'", "'unsafe-inline'", "'unsafe-eval'", 'www.wiris.net'],
-          'font-src': ["'self'", "'unsafe-inline'", 'www.wiris.net'],
-          'connect-src': ["'self'", "'unsafe-inline'", "'unsafe-eval'", 'www.wiris.net'],
-          'style-src': ["'self'", "'unsafe-inline'", "'unsafe-eval'", 'www.wiris.net'],
-          'img-src': ["'self'", "'unsafe-inline'", "'unsafe-eval'", 'www.wiris.net'],
+          'script-src': ["'self'","'unsafe-eval'",  externalURI],
+          'script-src-attr': ["'self'", "'unsafe-inline'", externalURI],
+          'font-src': ["'self'",  externalURI],
+          'connect-src': ["'self'", externalURI, "analytics.strapi.io"],
+          'style-src': ["'self'", "'unsafe-inline'", externalURI],
+          'img-src': ["'self'", "blob:", "data:", externalURI],
         },
       }
     },
@@ -60,7 +61,7 @@ module.exports = ({ env }) => [
   'strapi::body',
   'strapi::favicon',
   'strapi::public',
-];
+];     
 ```
 
 Then, you'll need to build your admin panel:
