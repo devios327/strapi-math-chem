@@ -21,7 +21,7 @@ Output format is [MathML](https://developer.mozilla.org/ru/docs/Web/MathML):
 ## Installation
 To install this plugin, you need to add an NPM dependency to your Strapi application.
 
-```js
+```console
 # Using Yarn
 yarn add devios327/math-chem
 
@@ -79,7 +79,7 @@ module.exports = ({ env }) => [
 ```
 
 Then, you'll need to build your admin panel:
-```js
+```console
 # Using Yarn
 yarn build
 
