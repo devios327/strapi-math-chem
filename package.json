@@ -1,0 +1,51 @@
+{
+  "name": "math-chem",
+  "version": "0.0.0",
+  "description": "Add support for mathematical and chemical formulas for you Strapi project!",
+  "strapi": {
+    "name": "math-chem",
+    "description": "Strapi math-chem plugin: integration of mathematical and chemical formulas. Make the content scientific and user-friendly! 🧪✨",
+    "kind": "plugin",
+    "displayName": "math-chem"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/devios327/strapi-math-chem.git"
+  },
+  "dependencies": {
+    "@ckeditor/ckeditor5-react": "^6.1.0",
+    "@strapi/design-system": "^1.6.3",
+    "@strapi/helper-plugin": "^4.6.0",
+    "@strapi/icons": "^1.6.3",
+    "ckeditor5-mathtype": "^1.0.4",
+    "prop-types": "^15.7.2"
+  },
+  "devDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^5.3.4",
+    "styled-components": "^5.3.6"
+  },
+  "peerDependencies": {
+    "react": "^17.0.0 || ^18.0.0",
+    "react-dom": "^17.0.0 || ^18.0.0",
+    "react-router-dom": "^5.3.4",
+    "styled-components": "^5.3.6",
+    "@strapi/strapi":"4.17.0"
+  },
+  "author": {
+    "name": "devios327",
+    "email": "devios327@gmail.com"
+  },
+  "maintainers": [
+    {
+      "name": "devios327",
+      "email": "devios327@gmail.com"
+    }
+  ],
+  "engines": {
+    "node": ">=18.0.0 <=20.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}
