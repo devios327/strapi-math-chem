@@ -23,29 +23,14 @@ To install this plugin, you need to add an NPM dependency to your Strapi applica
 
 ```console
 # Using Yarn
-yarn add math-chem
+yarn add strapi-math-chem
 
 # Or using NPM
-npm install math-chem
+npm install strapi-math-chem
 ```
 
 ## Configuration
-Firstly, add and enable plugin in Strapi config file:
-```
-./config/plugins.js.
-```
-
-```js
-module.exports = {
-  // ...
-  'math-chem': {
-    enabled: true,
-    resolve: './src/plugins/math-chem'
-  },
-  // ...
-}
-```
-Secondly, add Content Security Policy to global middlewares. This add resource with [MathType Integrations](https://docs.wiris.com/mathtype/?lang=en) to Content Security Policy.
+In order to display some content from an external source on your admin side you should configure your middlewares.js. Add resource with [MathType Integrations](https://docs.wiris.com/mathtype/?lang=en) to middlewares.js.
 ```
 ./config/middlewares.js
 ```
