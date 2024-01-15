@@ -31,7 +31,7 @@ npm install devios327/math-chem
 
 ## Configuration
 Firstly, add and enable plugin in config file:
-```js
+```
 ./config/plugins.js.
 ```
 
