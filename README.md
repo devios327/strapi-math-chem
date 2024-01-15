@@ -23,10 +23,10 @@ To install this plugin, you need to add an NPM dependency to your Strapi applica
 
 ```console
 # Using Yarn
-yarn add devios327/math-chem
+yarn add math-chem
 
 # Or using NPM
-npm install devios327/math-chem
+npm install math-chem
 ```
 
 ## Configuration
