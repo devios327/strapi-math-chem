@@ -2,6 +2,15 @@
   "name": "strapi-math-chem",
   "version": "1.0.7",
   "description": "Add support for mathematical and chemical formulas for you Strapi project!",
+  "keywords": [
+    "strapi",
+    "mathematics",
+    "chemistry",
+    "formula",
+    "wysiwyg",
+    "rich text",
+    "editor"
+  ],
   "strapi": {
     "name": "math-chem",
     "description": "Strapi math-chem plugin: integration of mathematical and chemical formulas. Make the content scientific and user-friendly! 🧪✨",
