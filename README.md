@@ -46,7 +46,7 @@ module.exports = {
 }
 ```
 Secondly, add Content Security Policy to global middlewares. This add resource with [MathType Integrations](https://docs.wiris.com/mathtype/?lang=en) to Content Security Policy.
-```js
+```
 ./config/middlewares.js
 ```
 
